@@ -114,14 +114,28 @@
       margin-bottom: 6px;
     }
 
+    .name-wrap {
+      display: inline-block;
+      margin-bottom: 14px;
+    }
+
     .name {
-      margin: 0 0 10px;
+      margin: 0 0 6px;
       font-family: 'EB Garamond', Georgia, serif;
       font-size: clamp(3rem, 5vw, 4.35rem);
       line-height: 0.94;
       letter-spacing: -0.045em;
       font-weight: 700;
       color: var(--ink);
+      display: block;
+      width: fit-content;
+    }
+
+    .name-rule {
+      width: 100%;
+      height: 2px;
+      background: var(--accent);
+      margin: 0;
     }
 
     .title {
@@ -135,32 +149,21 @@
     .affiliation {
       color: var(--muted);
       font-size: 0.98rem;
-      margin-bottom: 16px;
+      margin-bottom: 10px;
       max-width: 760px;
     }
 
     .contact-line {
       font-size: 0.9rem;
       color: var(--muted);
-      margin-bottom: 10px;
+      margin-bottom: 6px;
     }
 
     .profile-links {
       display: flex;
       flex-wrap: wrap;
       gap: 10px 16px;
-      margin-bottom: 18px;
-    }
-
-    .contact-line {
-      margin-bottom: 10px;
-    }
-
-    .profile-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 16px;
-      margin-bottom: 18px;
+      margin-bottom: 14px;
     }
 
     .profile-links a {
@@ -179,11 +182,11 @@
     }
 
     .field-line {
-      color: var(--accent);
-      font-size: 0.9rem;
-      font-weight: 600;
+      color: #35577f;
+      font-size: 0.89rem;
+      font-weight: 500;
       letter-spacing: 0.01em;
-      margin-bottom: 14px;
+      margin-bottom: 10px;
     }
 
     .section {
@@ -201,18 +204,7 @@
       letter-spacing: 0.01em;
     }
 
-    .interest-line,
-    .lead-text {
-      color: var(--muted);
-      font-size: 0.97rem;
-      line-height: 1.75;
-    }
-
-    .interest-line {
-      margin-bottom: 8px;
-      color: var(--accent);
-      font-weight: 600;
-    }
+    
 
     .edu-list {
       display: grid;
@@ -461,8 +453,8 @@
       border-top: 1px solid var(--rule);
       padding-top: 14px;
       text-align: center;
-      font-size: 0.78rem;
-      color: #8a8a8a;
+      font-size: 0.76rem;
+      color: #9a9a9a;
     }
 
     @media (max-width: 780px) {
@@ -475,7 +467,6 @@
         padding-right: 20px;
       }
 
-      .hero-grid,
       .skills-grid,
       .contact-grid,
       .comments-grid {
@@ -502,8 +493,9 @@
       <div class="nav-links">
         <a href="#education">Education</a>
         <a href="#publications">Publications</a>
+        <a href="#working-papers">Working Papers</a>
         <a href="#teaching">Teaching</a>
-        <a href="#skills">Methods</a>
+        <a href="#skills">Technical Skills</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -511,14 +503,18 @@
 
   <div class="page">
     <header class="masthead" id="top">
-      <h1 class="name">Abdul Khaliq</h1>
+      <div class="name-wrap">
+        <h1 class="name">Abdul Khaliq</h1>
+        <div class="name-rule"></div>
+      </div>
       <div class="title">Ph.D. Student · Water Economics &amp; Policy</div>
       <div class="affiliation">Department of Water Science &amp; Management · New Mexico State University · Las Cruces, New Mexico</div>
       <div class="contact-line">Email: <a href="mailto:akb@nmsu.edu">akb@nmsu.edu</a></div>
       <div class="field-line">Environmental and Natural Resource Economics | Applied Microeconomics | Water Economics &amp; Policy</div>
       <div class="profile-links">
-        <a href="https://drive.google.com/file/d/1EV60sJm6ebxgWF7speERruDRgvFGxrtm/view?usp=drive_link">Curriculum Vitae</a>
+        <a href="https://drive.google.com/file/d/1EV60sJm6ebxgWF7speERruDRgvFGxrtm/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
         <a href="https://scholar.google.com/citations?user=s14APysAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-2525-3536" target="_blank" rel="noopener noreferrer">ORCID</a>
         <a href="https://www.researchgate.net/profile/Abdul-Khaliq-54?ev=hdr_xprf" target="_blank">ResearchGate</a>
         <a href="https://www.linkedin.com/in/abdulkhaliqbutt/" target="_blank">LinkedIn</a>
       </div>
@@ -587,19 +583,22 @@
         </div>
       </div>
 
-      <p class="subheading">Manuscripts Under Review</p>
+      </section>
+
+    <section class="section" id="working-papers">
+      <h2 class="section-title">Working Papers</h2>
       <div class="pub-list">
         <div class="pub-item">
-          <div class="pub-num">—</div>
-          <div class="pub-entry"><strong>Khaliq, A<sup class="author-sup">†</sup>.</strong> &amp; Mamkhezri, J. Assessing the impact of eminent domain reforms on renewable energy expansion: A U.S. state-level analysis. <em>Energy Economics</em>. <span class="status">Revision submitted.</span></div>
+          <div class="pub-num">1.</div>
+          <div class="pub-entry"><strong>Khaliq, A<sup class="author-sup">†</sup>.</strong> &amp; Mamkhezri, J. Assessing the impact of eminent domain reforms on renewable energy expansion: A U.S. state-level analysis. <span class="status">Revision submitted.</span></div>
         </div>
         <div class="pub-item">
-          <div class="pub-num">—</div>
-          <div class="pub-entry">Farooq, O. &amp; <strong>Khaliq, A.</strong> Evaluating deposit efficiency and lending performance at the Bank of North Dakota. <em>Applied Economics Letters</em>. <span class="status">Under review.</span></div>
+          <div class="pub-num">2.</div>
+          <div class="pub-entry">Farooq, O. &amp; <strong>Khaliq, A.</strong> Evaluating deposit efficiency and lending performance at the Bank of North Dakota. <span class="status">Under review.</span></div>
         </div>
         <div class="pub-item">
-          <div class="pub-num">—</div>
-          <div class="pub-entry"><strong>Khaliq, A<sup class="author-sup">†</sup>.</strong> &amp; Mamkhezri, J. Assessing environmental impacts of electricity distribution losses and natural resources in Pakistan. <em>Development &amp; Sustainability in Economics &amp; Finance</em>. <span class="status">Under review.</span></div>
+          <div class="pub-num">3.</div>
+          <div class="pub-entry"><strong>Khaliq, A<sup class="author-sup">†</sup>.</strong> &amp; Mamkhezri, J. Assessing environmental impacts of electricity distribution losses and natural resources in Pakistan. <span class="status">Under review.</span></div>
         </div>
       </div>
     </section>
@@ -666,7 +665,7 @@
     </section>
 
     <section class="section" id="skills">
-      <h2 class="section-title">Methods &amp; Tools</h2>
+      <h2 class="section-title">Technical Skills</h2>
       <div class="skills-grid">
         <div>
           <div class="group-label">Econometrics &amp; Statistics</div>
@@ -678,7 +677,7 @@
         </div>
         <div>
           <div class="group-label">Spatial &amp; Other</div>
-          <div class="group-list">ArcGIS Pro<br>IMPLAN<br>LaTeX</div>
+          <div class="group-list">ArcGIS Pro<br>Stella<br>LaTeX</div>
         </div>
       </div>
     </section>
