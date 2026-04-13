@@ -247,7 +247,7 @@
     main {
       flex: 1;
       padding: 0 48px 60px;
-      max-width: 900px;
+      min-width: 0;
     }
 
     /* ── Hero name ─────────────────────────────────────────── */
@@ -323,7 +323,7 @@
 
     p {
       margin-bottom: 16px;
-      max-width: 680px;
+      max-width: 780px;
       color: var(--text);
     }
 
@@ -357,7 +357,6 @@
       margin-bottom: 4px;
       border-top: 1px solid var(--line);
       border-bottom: 1px solid var(--line);
-      max-width: 680px;
     }
     .profile-links a {
       font-size: 0.82rem;
@@ -377,7 +376,7 @@
     }
 
     /* ── Education ─────────────────────────────────────────── */
-    .edu-list { max-width: 760px; }
+    .edu-list { width: 100%; }
 
     .edu-row {
       display: grid;
@@ -434,12 +433,12 @@
       margin: 28px 0 14px;
       padding-bottom: 8px;
       border-bottom: 1px solid var(--line);
-      max-width: 760px;
+      width: 100%;
     }
     .pub-subhead:first-of-type { margin-top: 0; }
 
     .pub-list {
-      max-width: 760px;
+      width: 100%;
       list-style: none;
       padding: 0;
       counter-reset: pub-counter 7;
@@ -477,7 +476,7 @@
 
     /* ── Working papers ────────────────────────────────────── */
     .wp-list {
-      max-width: 760px;
+      width: 100%;
       list-style: none;
       padding: 0;
     }
@@ -518,7 +517,6 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 16px;
       margin: 28px 0 36px;
-      max-width: 760px;
     }
     .stat-card {
       background: var(--card);
@@ -557,7 +555,7 @@
     /* ── Teaching table ────────────────────────────────────── */
     .t-wrap {
       overflow-x: auto;
-      max-width: 760px;
+      width: 100%;
       margin-bottom: 36px;
       border: 1px solid var(--line);
       box-shadow: var(--shadow);
@@ -614,7 +612,8 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
-      max-width: 960px;
+      width: 100%;
+      align-items: start;
     }
     .quote {
       background: var(--card);
@@ -632,7 +631,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 32px;
-      max-width: 760px;
+      width: 100%;
     }
     .skill-group {}
     .skill-group-title {
@@ -661,7 +660,7 @@
     }
 
     /* ── Contact ───────────────────────────────────────────── */
-    .contact-card { max-width: 560px; }
+    .contact-card { width: 100%; }
     .contact-row {
       display: flex;
       align-items: flex-start;
