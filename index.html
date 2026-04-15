@@ -90,10 +90,11 @@
       writing-mode: vertical-rl;
       transform: rotate(180deg);
       font-family: var(--mono);
-      font-size: 0.6rem;
-      letter-spacing: 0.16em;
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--sub);
+      font-weight: 700;
       transition: color 0.25s;
     }
     .rail-nav a:hover,
@@ -506,51 +507,50 @@
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
+      gap: 40px;
     }
-    .skill-group {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      padding: 24px 24px;
-    }
+    .skill-group {}
     .skill-group-title {
       font-family: var(--mono);
       font-size: 0.62rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 16px;
-      padding-bottom: 12px;
+      margin-bottom: 14px;
+      padding-bottom: 10px;
       border-bottom: 1px solid var(--border);
     }
     .skill-item {
-      font-size: 0.95rem;
+      font-size: 0.97rem;
       color: var(--text);
-      padding: 7px 0;
+      padding: 6px 0;
       border-bottom: 1px solid var(--border);
     }
     .skill-item:last-child { border-bottom: none; }
 
     /* ── Contact ───────────────────────────────────────────── */
     .contact-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      margin-bottom: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 600px;
     }
     .contact-cell {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      padding: 22px 24px;
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
     }
+    .contact-cell:first-child { border-top: 1px solid var(--border); }
     .contact-cell-label {
       font-family: var(--mono);
       font-size: 0.6rem;
       letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold);
-      display: block;
-      margin-bottom: 8px;
+      min-width: 100px;
+      flex-shrink: 0;
     }
     .contact-cell-val {
       font-size: 0.97rem;
@@ -935,7 +935,7 @@
               <span class="contact-cell-label">Location</span>
               <div class="contact-cell-val">Las Cruces, New Mexico, USA</div>
             </div>
-            <div class="contact-cell" style="grid-column:1/-1">
+            <div class="contact-cell">
               <span class="contact-cell-label">Department</span>
               <div class="contact-cell-val">Water Science &amp; Management · New Mexico State University</div>
             </div>
